@@ -1,3 +1,10 @@
+# Calculation of the Effective Niche
+Calculating the effective niche for a given cell consists of three steps
+
+1.deex 
+
+
+
 
 <details>
   <summary>Suggestions on choice of kernel bandwidth</summary>
