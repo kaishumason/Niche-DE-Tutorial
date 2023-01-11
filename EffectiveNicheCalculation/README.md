@@ -1,7 +1,9 @@
 # Calculation of the Effective Niche
-Calculating the effective niche for a given cell consists of three steps
+Calculating the effective niche for a given index cell consists of three steps
 
-1.deex 
+1. Calculating the distance between the index cell and every other cell in the sample
+2. Transforming distances to kernel similarities using a gaussian kernel with kernel bandwidth $\sigma$
+3. Define the effective niche for niche cell $n$ as the sum of kernel similarities between the index cell and cells of type $n$
 
 
 
