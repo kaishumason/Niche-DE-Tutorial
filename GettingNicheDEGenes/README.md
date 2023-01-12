@@ -35,4 +35,14 @@ The output is a list of genes and their corresponding pvalues at the resolution 
   
   </details>
   
+  # Pathway Enrichement Analysis With Your Niche Genes
+  Interaction level $(index,niche)+$ and $(index,niche)-$ genes can be input into a pathway enrichment analysis to determine what processes are being up and downregulated in the index cell type when in the presence of the niche cell type. Here we perform pathway enrichment analysis of (fibroblast,tumor)+ genes.
+```{r}
+#Load enichr package
+library(enrichR)
+#get fibroblast tumor niche genes
+fibro_tum_pos = get_niche_DE_genes(NDE_obj,'interaction',index='stromal',niche = 'tumor_epithelial',pos = T,alpha = 0.05)
+#run pathway enrichment analysis
+fibro_tum_processes = enrichr(fibro_tum_pos[,1],databases = 'Reactome_2016')
+```
 
