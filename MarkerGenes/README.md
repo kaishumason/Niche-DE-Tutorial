@@ -1,11 +1,17 @@
 # Finding Marker Genes in an Index Cell Type Between Two Niche Cell Types
 Given two niche cell types, $n_1$ and $n_2$, and an index cell type $i$ the purpose of niche marker gene analysis is to find genes in which the effect of $n_1$ on $i$'s gene expression is greater than the effect of $n_2$ on $i$'s gene expression. This is done doing a contrast test of the corresponding niche-DE regression coefficents. 
 Marker gene analysis can be done via the function 'niche_DE_markers' which takes in 5 arguments
+
+<details>
+  <summary>Arguments</summary>
+  
 + object: A niche-DE object
 + index: The index cell type
 + niche1: Niche cell type $n_1$
 + niche2: Niche cell type $n_2$
 + alpha: The FDR control level desired
+
+</details>
 
 Here we look for marker genes in fibroblasts near tumor cells relative to B cells. The output will be a list of marker genes with their corresponding adjusted pvalues.
 ```{r}
