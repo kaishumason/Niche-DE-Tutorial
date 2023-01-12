@@ -33,7 +33,7 @@ red[190] = 'red'
 coord = data.frame(coord,D,red)
 ```
 We first see what happens if the kernel bandwidth is very small. We see that the only spot that contributes to the effective niche is the middle spot itself. This may be appropriate if the spot can contain many cells like in Visium data.
-
+<img src="https://github.com/Kmason23/Niche-DE-Tutorial/blob/main/EffectiveNicheCalculation/EN_coordinate_small.png" style=" width:600px ; height:600px "  >
 ```{r}
 #input your own sigma value
 sigma = 0.001
@@ -47,7 +47,8 @@ ggplot(coord_sigma_small,aes(x,y,size=ifelse(D==0, NA, D),color = red))+geom_poi
   scale_color_manual(red, values = c("black", "red"))+ theme(legend.position="none")
 ```
 We now see what happens if the kernel bandwidth is equivalent to the distance between neighboring spots. We see that neighboring spots now also contribute to the effective niche. This value may be appropriate if we believe that niche patterns only depend on the closest neighbors of a spot. 
-
+<img src="https://github.com/Kmason23/Niche-DE-Tutorial/blob/main/EffectiveNicheCalculation/EN_coordinate_medium.png" style=" width:600px ; height:600px "  >
+  
 ```{r}
 #input your own sigma value
 sigma = 1
@@ -62,7 +63,7 @@ ggplot(coord_sigma_small,aes(x,y,size=ifelse(D==0, NA, D),color = red))+geom_poi
 ```
 
 We now see what happens if the kernel bandwidth is large, say 1/4th of the length of the tissue. Many spots now contribute to the effective niche. Additionally,it looks as though there is nearly equal contribution for many cells near the center. This value may be appropriate if we believe that niche patterns only depend on tissue level patterns in niche.
-
+<img src="https://github.com/Kmason23/Niche-DE-Tutorial/blob/main/EffectiveNicheCalculation/EN_coordinate_large.png" style=" width:600px ; height:600px "  >
 
 ```{r}
 #input your own sigma value
