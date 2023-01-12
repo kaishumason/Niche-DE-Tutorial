@@ -12,12 +12,18 @@ NDE_obj = get_niche_DE_pval(NDE_obj,pos = F)
 
 # Extract Niche-DE Genes For a Specific (Index,Niche) Pair
  After calculating pvalues, we can find which genes are $(index,niche)$ niche genes at varying resolutions and FDR control levels. The function to do so is called 'get_niche_DE_genes' and contains 6 arguments
+ 
+ <details>
+  <summary>Arguments</summary>
+  
 + object: A niche-DE object
 + resolution: The resolution at which  to return genes. There are three choices for resolution;gene level, cell type level, and interaction level.
 + index: The index cell type of interest
 + niche: The niche cell type of interest
 + pos:  A logical indicating if one wants to find interaction level $(index,niche)+$ niche genes (pos = T), or $(index,niche)-$ niche genes (pos = F)
 + alpha: The level at which to perform the benjamini-hochberg procedure at each resolution level\
+</details>
+
 Below, we find interaction level (fibroblast,tumor)+ niche genes.
 ```{r,warning=FALSE}
 get_niche_DE_genes(NDE_obj,'interaction',index='stromal',niche = 'tumor_epithelial',pos = T,alpha = 0.05)
