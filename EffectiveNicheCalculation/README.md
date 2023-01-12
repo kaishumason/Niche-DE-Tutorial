@@ -5,10 +5,6 @@ Calculating the effective niche for a given index cell consists of three steps
 2. Transforming distances to kernel similarities using a gaussian kernel with kernel bandwidth $\sigma$
 3. Define the effective niche for niche cell $n$ as the sum of kernel similarities between the index cell and cells of type $n$
 
-An illustartion of the effective niche calculation procedure is shown below.\
-<img src="https://github.com/Kmason23/Niche-DE-Tutorial/blob/main/EffectiveNicheCalculation/Artboard%202.png" style=" width:60px ; height:60px "  >
-
-
 We can perform effective niche calculations using the function 'CalculateEffectiveNiche' which takes in two arguments
 + object: A niche-DE object
 + cutoff: The minimum kernel similarity allowable. Similarities below this value are truncated to 0. Default value 0.05.
