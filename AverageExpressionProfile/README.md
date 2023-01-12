@@ -1,5 +1,28 @@
 # Calculating the Average Expression Profile From a scRNA-seq Reference Dataset
-Because niche-DE compares observed gene expression against the average expression for a cell type, making an average expression profile matrix is critical. This can be done with the function 'CreateLibraryMatrix' if you have raw data. If your reference dataset is a seurat object, you can use the function 'CreateLibrarymatrixFromSeurat'. This function takes in 2 arguments 
+Because niche-DE compares observed gene expression against the average expression for a cell type, making an average expression profile matrix is critical. 
+
+# From Raw Data
+If you have raw data matrices, the expression profile matrix can be creaeted using the function 'CreateLibraryMatrix'. his function takes in 2 arguments 
+
+<details>
+  <summary>Arguments</summary>
+  
+  + seurat data: Single cell rna-seq counts matrix. Dimension should be #cells/spots by #genes
+  + cell_type Cell_type assignment matrix. First row is cell names and second row is cell type assignment.
+  
+ </details>
+ 
+  ```
+ #read in data
+ data = readRDS('liver_met_data.rds')
+ CT = readRDS('liver_met_CT.rds')
+ #create library matrix
+ CreateLibraryMatrix(data,CT)
+ ```
+ 
+
+# From Seurat object
+If your reference dataset is a seurat object, you can use the function 'CreateLibrarymatrixFromSeurat'. This function takes in 2 arguments 
 
 <details>
   <summary>Arguments</summary>
