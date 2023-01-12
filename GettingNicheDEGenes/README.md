@@ -11,6 +11,7 @@ NDE_obj = get_niche_DE_pval(NDE_obj,pos = F)
 ```
 <details>
   <summary>Output Specifics</summary>
+  
   Running the above function will populate 2 fields in you rniche-DE object
 + Niche-DE-pval-pos: Pvalues for testing if a gene is an (index,niche)+ niche gene. This is a list with length equal to the length of sigma. Each sublist contains 3 items.
 ++ gene-level: A list of gene level pvalues. It is a vector with length equal to the number of genes.
