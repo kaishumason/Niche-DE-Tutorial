@@ -1,3 +1,4 @@
+
 Starting with a spatial seurat object, we can make a niche-DE object with the function 'CreateNicheDEObjectFrom Seurat'. This function takes in 5 arguments
 <details>
   <summary>Arguments</summary>
@@ -9,3 +10,14 @@ Starting with a spatial seurat object, we can make a niche-DE object with the fu
   + sigma: A list of kernel bandwidths to use for effective niche calculation
   
   </details>
+
+```
+#read in seurat object
+seurat_obj = readRDS('liver_met_seurat.rds')
+#download average expression profile matrix 
+data("vignette_library_matrix")
+data("vignette_deconv_mat")
+#make niche-DE object
+NDE_obj = CreateNicheDEObject(seurat_obj,'Spatial',vignette_library_matrix,vignette_deconv_mat,sigma = c(1,15,40))
+
+```
