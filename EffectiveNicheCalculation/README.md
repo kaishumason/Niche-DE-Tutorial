@@ -6,8 +6,14 @@ Calculating the effective niche for a given index cell consists of three steps
 3. Define the effective niche for niche cell $n$ as the sum of kernel similarities between the index cell and cells of type $n$
 
 We can perform effective niche calculations using the function 'CalculateEffectiveNiche' which takes in two arguments
+
+<details>
+  <summary>Arguments</summary>
+  
 + object: A niche-DE object
 + cutoff: The minimum kernel similarity allowable. Similarities below this value are truncated to 0. Default value 0.05.
+
+</details>
 ```{r}
 NDE_obj = CalculateEffectiveNiche(NDE_obj)
 ```
