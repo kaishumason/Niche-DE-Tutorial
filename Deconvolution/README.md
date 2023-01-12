@@ -92,6 +92,8 @@ for(j in c(1:length(myRCTD@results))){
   #normalize so that rows sum to 1
   deconv_est[j,] = deconv_est[j,]/sum(deconv_est[j,])
 }
+#final output
+deconv_est
 ```
 
 </details>
