@@ -19,9 +19,9 @@ NDE_obj = get_niche_DE_pval(NDE_obj,pos = F)
 ++ interaction-level: An array of dimension #cell types by #cell types by #genes which gives interaction level pvalues. Index (i,j,k) gives a pvalue corresponding to whether gene k is an (index cell type i, niche cell type j)+ niche gene.
 
 + Niche-DE-pval-neg: Pvalues for testing if a gene is an (index,niche)- niche gene. This is a list with length equal to the length of sigma. Each sublist contains 3 items.
-++ gene-level: A list of gene level pvalues. It is a vector with length equal to the number of genes.
-++ cell-type-level: A matrix of dimension #genes by #cell types which gives cell type level pvalues.Index (i,j) gives a pvalue corresponding to whether gene i is a niche gene for index cell type j. 
-++ interaction-level: An array of dimension #cell types by #cell types by #genes which gives interaction level pvalues. Index (i,j,k) gives a pvalue corresponding to whether gene k is an (index cell type i, niche cell type j)- niche gene.
+  + gene-level: A list of gene level pvalues. It is a vector with length equal to the number of genes.
+  + cell-type-level: A matrix of dimension #genes by #cell types which gives cell type level pvalues.Index (i,j) gives a pvalue corresponding to whether gene i is a niche gene for index cell type j. 
+  + interaction-level: An array of dimension #cell types by #cell types by #genes which gives interaction level pvalues. Index (i,j,k) gives a pvalue corresponding to whether gene k is an (index cell type i, niche cell type j)- niche gene.
  
  </details>
 
