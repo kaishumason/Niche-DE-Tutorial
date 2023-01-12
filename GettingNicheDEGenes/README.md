@@ -9,6 +9,21 @@ In general, the user should run this function twice, one for each value of 'pos'
 NDE_obj = get_niche_DE_pval(NDE_obj,pos = T)
 NDE_obj = get_niche_DE_pval(NDE_obj,pos = F)
 ```
+<details>
+  <summary>Output Specifics</summary>
+  Running the above function will populate 2 fields in you rniche-DE object
++ Niche-DE-pval-pos: Pvalues for testing if a gene is an (index,niche)+ niche gene. This is a list with length equal to the length of sigma. Each sublist contains 3 items.
+++ gene-level: A list of gene level pvalues. It is a vector with length equal to the number of genes.
+++ cell-type-level: A matrix of dimension #genes by #cell types which gives cell type level pvalues.Index (i,j) gives a pvalue corresponding to whether gene i is a niche gene for index cell type j. 
+++ interaction-level: An array of dimension #cell types by #cell types by #genes which gives interaction level pvalues. Index (i,j,k) gives a pvalue corresponding to whether gene k is an (index cell type i, niche cell type j)+ niche gene.
+
++ Niche-DE-pval-neg: Pvalues for testing if a gene is an (index,niche)- niche gene. This is a list with length equal to the length of sigma. Each sublist contains 3 items.
+++ gene-level: A list of gene level pvalues. It is a vector with length equal to the number of genes.
+++ cell-type-level: A matrix of dimension #genes by #cell types which gives cell type level pvalues.Index (i,j) gives a pvalue corresponding to whether gene i is a niche gene for index cell type j. 
+++ interaction-level: An array of dimension #cell types by #cell types by #genes which gives interaction level pvalues. Index (i,j,k) gives a pvalue corresponding to whether gene k is an (index cell type i, niche cell type j)- niche gene.
+ 
+  </details>
+
 
 # Extract Niche-DE Genes For a Specific (Index,Niche) Pair
  After calculating pvalues, we can find which genes are $(index,niche)$ niche genes at varying resolutions and FDR control levels. The function to do so is called 'get_niche_DE_genes' and contains 6 arguments
