@@ -18,6 +18,7 @@ NDE_obj = get_niche_DE_pval(NDE_obj,pos = F)
 + niche: The niche cell type of interest
 + pos:  A logical indicating if one wants to find interaction level $(index,niche)+$ niche genes (pos = T), or $(index,niche)-$ niche genes (pos = F)
 + alpha: The level at which to perform the benjamini-hochberg procedure at each resolution level
+Below, we find interaction level (fibroblast,tumor)+ niche genes.\
 ```{r,warning=FALSE}
 get_niche_DE_genes(NDE_obj,'interaction',index='stromal',niche = 'tumor_epithelial',pos = T,alpha = 0.05)
 ```
