@@ -26,7 +26,7 @@ NDE_obj = CalculateEffectiveNiche(NDE_obj)
   
 # Choice of sigma/kernel bandwidth
 Choosing a reasonable sigma vector is critical to generating robust and interpretable results.Sigma essentially determines what range of neighboring spots contribute towards the effective niche. Small values of sigma ensure that only close neighboring spots are considered while large values of sigma result in effective niches that are smooth across large regions of the tissue.\
-To see what this looks like, I will generate a grid of values and show what spots contribute to the effective niche of the middle spot. The size of the spot corresponds to its relative importance. \
+To see what this looks like, I will generate a grid of values and show what spots contribute to the effective niche of the middle spot. The size of the spot corresponds to its relative importance. Below is a plot of the spatial coordinates of the grid with the middle spot colored red.
 
 <img src="https://github.com/Kmason23/Niche-DE-Tutorial/blob/main/EffectiveNicheCalculation/EN_coordinates.png" style=" width:600px ; height:600px "  >
 
