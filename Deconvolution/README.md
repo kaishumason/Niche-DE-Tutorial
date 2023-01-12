@@ -1,4 +1,4 @@
-#Deconvolution using RCTD
+# Deconvolution using RCTD
 Here we show how to perform cell type deconvolution using RCTD (Robust Cell Type Decomposition).\
 The first step is to read in the reference dataset and create a reference object
 
