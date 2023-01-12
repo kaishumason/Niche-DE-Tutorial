@@ -2,6 +2,10 @@
 # Calculating Niche-DE Pvalues
 
 After performing niche-DE we will now calculate pvalues. The function to calculate pvalues is called 'get_niche_DE_pval' and contains two arguments. 
+
+<details>
+  <summary>Arguments</summary>
+  
 + object: A niche-DE object
 + pos: A logical indicating if one wants to compute interaction level pvalues corresponding to a gene being an $(index,niche)+$ gene (pos = T), or an $(index,niche)-$ gene (pos = F)
 In general, the user should run this function twice, one for each value of 'pos'
@@ -9,6 +13,9 @@ In general, the user should run this function twice, one for each value of 'pos'
 NDE_obj = get_niche_DE_pval(NDE_obj,pos = T)
 NDE_obj = get_niche_DE_pval(NDE_obj,pos = F)
 ```
+  
+  </details>
+  
 <details>
   <summary>Output Specifics</summary>
   
