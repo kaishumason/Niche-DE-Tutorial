@@ -57,6 +57,7 @@ The third step is to create an RCTD object and perform RCTD. Here we set the max
 
 <details>
   <summary>Step 3: Creating an RCTD Object </summary>
+  
 ```
 ###STEP 3: create an RCTD object
 #create an RCTD object. Here we set the max number of cell types in a spot to be 4.
@@ -71,6 +72,7 @@ The fourth step is to reformat your RCTD output into a matrix. This matrix will 
 
 <details>
   <summary>Step 4: Making a Deconvolution Matrix </summary>
+  
 ``` 
 ###Step 4: Reformat results into a matrix 
 #get unique cell types
