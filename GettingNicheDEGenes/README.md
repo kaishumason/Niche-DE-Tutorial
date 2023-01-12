@@ -28,11 +28,11 @@ The output is a list of genes and their corresponding pvalues at the resolution 
   <summary>Interpretting Your Results</summary>
   Assume that the 'pos' parameter is set to 'True'. The interpretation of your output will differ based on the resolution chosen.\
  
-  + Resolution  gene: Genes outputted show some sign of being a noche gene for some $(index,niche)$ pair.
-  + Resolution  cell type: Genes outputted are significantly niche up or down regulated in the index cell. The niche cell type is unknown.
-  + Resolution  interaction: Genes outputted are significantly upregulated in the index cell type when in the presence of the niche cell type. If 'pos' = 'False' then Genes outputted are significantly downregulated in the index cell type when in the presence of the niche cell type.
+  + Resolution = gene: Genes outputted show some sign of being a noche gene for some $(index,niche)$ pair.
+  + Resolution = cell type: Genes outputted are significantly niche up or down regulated in the index cell. The niche cell type is unknown.
+  + Resolution = interaction: Genes outputted are significantly upregulated in the index cell type when in the presence of the niche cell type. If 'pos' = 'False' then Genes outputted are significantly downregulated in the index cell type when in the presence of the niche cell type.
   
   
-  <\details>
+  </details>
   
 
