@@ -1,4 +1,8 @@
 To see what ligand-receptor channels are driving niche signals in our data, we developed niche-LR. Niche-LR uses the [niche-net](https://www.nature.com/articles/s41592-019-0667-5) ligand-target potential matrix to find the top $K$ downstream targets for each ligand. The niche-DE T-statistics of these downstream genes are used to calculate ligand activity scores. The top $M$ ligands by ligand activity score and their corresponding receptors are then tested to confirm expression in the tissue. Niche-LR can be performed on spot resolution data using the function 'niche_LR_spot' and on single cell resolution data using the function 'niche_LR_cell'. 'niche_LR_spot' takes in 9 arguments 
+
+<details>
+  <summary>Arguments</summary>
+  
 + object: Niche-DE object
 + ligand cell: The cell type that expresses the ligand
 + receptor cell: The cell type that expresses the receptor
@@ -8,7 +12,8 @@ To see what ligand-receptor channels are driving niche signals in our data, we d
 + M: The maximum number of ligands that can pass initial filtering
 + alpha: The level at which to perform the Benjamini Hochberg correction
 + truncation value: The value at which to truncate T statistics.
-
+</details>
+  
 We now perform ligand-receptor analysis to infer ligand-receptor interactions between tumor cells (ligand expressing cell) and fibroblasts (receptor expressing cell) . The output will be a list of ligands and their corresponding receptors
 
 ```{r}
