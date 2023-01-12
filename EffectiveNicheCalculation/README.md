@@ -10,7 +10,6 @@ We can perform effective niche calculations using the function 'CalculateEffecti
 + cutoff: The minimum kernel similarity allowable. Similarities below this value are truncated to 0. Default value 0.05.
 ```{r}
 NDE_obj = CalculateEffectiveNiche(NDE_obj)
-
 ```
 
 
