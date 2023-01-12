@@ -25,7 +25,7 @@ NDE_obj = CreateNicheDEObject(seurat_obj,'Spatial',vignette_library_matrix,vigne
 <details>
   <summary>What's in the object?</summary>
 
-We see that their are 14 slots, 10 of which are populated when making the nicheDE object. Here we will explain what each slot should contain.
+We see that their are 14 slots, 10 of which are populated when making the nicheDE object. Here we will explain what each slot should contain, except for the ones prefixed by niche_DE.
 + counts: The RNA count data of the spatial transcriptomics dataset. The dimension will be #cells/spots by #genes.Genes are filtered out if they do not exist within the scrna-seq reference dataset.
 + coord: The spatial coordinates matrix of the spatial transcriptomics dataset.
 + sigma: The kernel bandwidth(s) chosen for calculating the effective niche. Recommended values will be discussed shortly.
