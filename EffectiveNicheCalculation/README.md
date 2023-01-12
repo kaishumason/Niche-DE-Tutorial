@@ -6,7 +6,7 @@ Calculating the effective niche for a given index cell consists of three steps
 3. Define the effective niche for niche cell $n$ as the sum of kernel similarities between the index cell and cells of type $n$
 
 An illustartion of the effective niche calculation procedure is shown below.\
-<img src="https://github.com/Kmason23/Niche-DE-Tutorial/blob/main/EffectiveNicheCalculation/Artboard.png" style=" width:600px ; height:600px "  >
+<img src="https://github.com/Kmason23/Niche-DE-Tutorial/blob/main/EffectiveNicheCalculation/Artboard%202.png" style=" width:600px ; height:600px "  >
 
 
 We can perform effective niche calculations using the function 'CalculateEffectiveNiche' which takes in two arguments
