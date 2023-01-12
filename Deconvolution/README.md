@@ -70,7 +70,7 @@ myRCTD <- run.RCTD(myRCTD, doublet_mode = "multi")
 The fourth step is to reformat your RCTD output into a matrix. This matrix will be of dimension #spots by #cell types. Each row will contain the deconvolution estimate for the corresponding spot.
 
 <details>
-  <summary>Step 4:Making a Deconvolution Matrix </summary>
+  <summary>Step 4: Making a Deconvolution Matrix </summary>
 ``` 
 ###Step 4: Reformat results into a matrix 
 #get unique cell types
