@@ -28,3 +28,4 @@ lr_mat = ramilowski_ligand_receptor_list,K = 25,M = 50,alpha = 0.05,truncation_v
 #preview output
 head(fibro_tumor_LR)
 ```
+The output should resemble a 2 column table of ligands and their corresponding receptors.
