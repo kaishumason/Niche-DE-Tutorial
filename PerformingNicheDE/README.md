@@ -10,6 +10,7 @@ NDE_obj = niche_DE(NDE_obj)
 
 <details>
   <summary>What does the output look like?</summary>
+  
  After running niche-DE, the 'niche-DE' slot in your niche-DE object will be populated. It will be a list with length equal to the length of sigma. Each item of the list contains a sublist with 4 items.
 + T-stat: An array of dimension #cell types by #cell types by #genes. Index (i,j,k) represents the T_statistic corresponding to the hypothesis test of testing whether gene k is an (index cell type i, niche cell type j) niche gene. 
 + Beta: An array of dimension #cell types by #cell types by #genes. Index (i,j,k) represents the beta coefficient corresponding to the niche effect of niche cell type j on index cell type i for gene k.
