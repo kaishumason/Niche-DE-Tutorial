@@ -100,3 +100,6 @@ deconv_est
 
 
 For more information, visit the [spacexr](https://github.com/dmcable/spacexr) github page.
+
+# Single Cell Data
+If your data is of the single cell resolution, then the deconvolution matrix is a dummy variable matrix. See [this link](https://www.geeksforgeeks.org/dummy-variables-in-r-programming/) for a tutorial on how to make dummy variable matrices. Note that your deconvolution matrix and your average expression profile matrix must have the cell types in the same order.
