@@ -71,6 +71,7 @@ ggplot(coord_sigma_small,aes(x,y,size=ifelse(D==0, NA, D),color = red))+geom_poi
 
 </details>
 We now see what happens if the kernel bandwidth is equivalent to the distance between neighboring spots. We see that neighboring spots now also contribute to the effective niche. This value may be appropriate if we believe that niche patterns only depend on the closest neighbors of a spot. \
+  
 <img src="https://github.com/Kmason23/Niche-DE-Tutorial/blob/main/EffectiveNicheCalculation/EN_coordinate_medium.png" style=" width:600px ; height:600px "  >
   
   
