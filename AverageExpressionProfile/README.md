@@ -8,7 +8,7 @@ If you have raw data matrices, the expression profile matrix can be creaeted usi
   <summary>Arguments</summary>
   
   + seurat data: Single cell rna-seq counts matrix. Dimension should be #cells/spots by #genes
-  + cell_type Cell_type assignment matrix. First row is cell names and second row is cell type assignment.
+  + cell type: Cell_type assignment matrix. First row is cell names and second row is cell type assignment.
   
  </details>
  
