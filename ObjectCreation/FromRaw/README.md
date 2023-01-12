@@ -4,9 +4,9 @@ Starting with a spatial seurat object, we can make a niche-DE object with the fu
   <summary>Arguments</summary>
   
   + counts mat: A counts matrix. The dimension should be #cells/spots by #genes.
-  + coordinate_mat: Coordinate matrix. Dimension should be #cells/spots by 2
-  + library mat: The average expression profile matrix calculated from a reference dataset
-  + deconv mat: The deconvolution matrix for the spatial dataset
+  + coordinate mat: Coordinate matrix. Dimension should be #cells/spots by 2. Make sure that rownames match that of the counts matrix.
+  + library mat: The average expression profile matrix calculated from a reference dataset.
+  + deconv mat: The deconvolution matrix for the spatial dataset. The dimension should be #spots/cells by #cell types
   + sigma: A list of kernel bandwidths to use for effective niche calculation
   
   </details>
