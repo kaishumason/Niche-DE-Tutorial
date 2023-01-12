@@ -3,7 +3,7 @@ Here we show how to perform cell type deconvolution using RCTD (Robust Cell Type
 The first step is to read in the reference dataset and create a reference object
 
 <details>
-  <summary>Step1:Reading in a Reference Dataset </summary>
+  <summary>Step 1: Reading in a Reference Dataset </summary>
   
 ```
 ###Step 0: Packages
@@ -29,7 +29,7 @@ reference <- Reference(count_raw, cell_types = cell_types)
 
 The second step is to read in the spatial data.
 <details>
-  <summary>Step2:Reading in Spatial Data </summary>
+  <summary>Step 2: Reading in Spatial Data </summary>
   
 ```
 ###STEP 2: Read in spatial data
@@ -53,10 +53,10 @@ puck <- SpatialRNA(coord, counts)
 
 </details>
 
-The third step is to create an RCTD object and perform RCTD
+The third step is to create an RCTD object and perform RCTD. Here we set the max number of cell types in a spot to be 4. Please refer to the documentation for information on other parameters
 
 <details>
-  <summary>Step3:Creating an RCTD Object </summary>
+  <summary>Step 3: Creating an RCTD Object </summary>
 ```
 ###STEP 3: create an RCTD object
 #create an RCTD object. Here we set the max number of cell types in a spot to be 4.
@@ -70,7 +70,7 @@ myRCTD <- run.RCTD(myRCTD, doublet_mode = "multi")
 The fourth step is to reformat your RCTD output into a matrix. This matrix will be of dimension #spots by #cell types. Each row will contain the deconvolution estimate for the corresponding spot.
 
 <details>
-  <summary>Step3:Creating an RCTD Object </summary>
+  <summary>Step 4:Making a Deconvolution Matrix </summary>
 ``` 
 ###Step 4: Reformat results into a matrix 
 #get unique cell types
