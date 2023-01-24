@@ -9,10 +9,12 @@ Once you have set up your niche_DE object, you can run niche-DE using the functi
 + C: The minimum total expression of a gene across observations needed for the niche-DE model to run. The default value is 150.
 + M: Minimum number of spots containing the index cell type with the niche cell type in its effective niche for (index,niche) niche patterns to be investigated. The default value is 10
 + Gamma: Percentile a gene needs to be with respect to expression in the index cell type in order for the model to investigate niche patterns for that gene in the index cell. The default value is 0.8 (80th percentile)
-```{r,warning = F}
+  
+  </details>
+  
+```
 NDE_obj = niche_DE(NDE_obj)
 ```
-</details>
 
 <details>
   <summary>What does the output look like?</summary>
