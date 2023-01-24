@@ -12,12 +12,12 @@ If you have raw data matrices, the expression profile matrix can be creaeted usi
   
  </details>
  
-  ```
+   ```
  #read in data
- data = readRDS('liver_met_data.rds')
- CT = readRDS('liver_met_CT.rds')
+ data('liver_met_data')
+ data('liver_met_CT')
  #create library matrix
- CreateLibraryMatrix(data,CT)
+ CreateLibraryMatrix(liver_met_data,liver_met_CT)
  ```
  
 
@@ -35,9 +35,8 @@ If your reference dataset is a seurat object, you can use the function 'CreateLi
   
  ```
  #read in data
- reference = readRDS('liver_met_ref.rds')
+ data('liver_met_ref')
  #create library matrix
- CreateLibraryMatrixFromSeurat(reference,assay = 'RNA')
+ CreateLibraryMatrixFromSeurat(liver_met_ref,assay = 'RNA')
  ```
-
 
