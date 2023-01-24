@@ -13,12 +13,12 @@ Starting with a spatial seurat object, we can make a niche-DE object with the fu
 
 ```
 #read in seurat object
-seurat_obj = readRDS('liver_met_seurat.rds')
+data('liver_met_seurat_object')
 #download average expression profile matrix 
 data("vignette_library_matrix")
 data("vignette_deconv_mat")
 #make niche-DE object
-NDE_obj = CreateNicheDEObject(seurat_obj,'Spatial',vignette_library_matrix,vignette_deconv_mat,sigma = c(1,15,40))
+NDE_obj = CreateNicheDEObject(liver_met_seurat_object,'Spatial',vignette_library_matrix,vignette_deconv_mat,sigma = c(1,15,40))
 
 ```
 
