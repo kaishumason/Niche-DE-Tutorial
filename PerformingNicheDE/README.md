@@ -1,5 +1,5 @@
 # Running Niche-DE
-Once you have set up your niche_DE object, you can run niche-DE using the function 'niche_DE'. This function takes 5 arguments
+Once you have set up your niche-DE object, you can run niche-DE using the function 'niche_DE'. This function takes 5 arguments
 
 <details>
   <summary>Arguments</summary>
